@@ -1,0 +1,39 @@
+/*doc
+---
+title: テーマカラー
+name: theme-color
+category: color
+---
+
+[color:Primary:#2169f3]
+[color:Succes:#4caf50]
+[color:Warning:#ff9800]
+[color:Danger:#f44336]
+[color:Default:#607d8b]
+
+*/
+
+/*doc
+---
+title: ウェブサービスキーカラー
+name: web-service-key-color
+category: color
+---
+
+[color:$color-brand-twitter:#55acee]
+[color:$color-brand-instagram:#125688]
+[color:$color-brand-facebook:#4e69a2]
+[color:$color-brand-vine:#00bf8f]
+[color:$color-brand-line:#0ecb36]
+[color:$color-brand-hatenabookmark:#008fde]
+
+```scss
+$color-brand-twitter: #55acee;
+$color-brand-instagram: #125688;
+$color-brand-facebook: #4e69a2;
+$color-brand-vine: #00bf8f;
+$color-brand-line: #0ecb36;
+$color-brand-hatenabookmark: #008fde;
+```
+
+*/

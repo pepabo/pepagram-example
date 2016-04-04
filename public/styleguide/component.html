@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="author" content="GMO Pepabo, Inc.">
+
+    <title>
+      Component - Example Style Guide
+    </title>
+
+    
+      
+        <link rel="stylesheet" href="../stylesheets/animation.css">
+      
+        <link rel="stylesheet" href="../stylesheets/color.css">
+      
+        <link rel="stylesheet" href="../stylesheets/component.css">
+      
+        <link rel="stylesheet" href="../stylesheets/index.css">
+      
+    
+
+    <link rel="stylesheet" href="pepagram.css">
+
+    
+      <style>
+        .pepagram-header__heading,
+        .pepagram-header__list,
+        .pepagram-header__item,
+        .pepagram-header__item a,
+        .pepagram-content a {
+          color: #3e6f99;
+        }
+        .pepagram-header.pepagram-header--index,
+        .pepagram-nav,
+        .pepagram-animation-example {
+          background-color: #3e6f99;
+        }
+      </style>
+    
+  </head>
+  <body>
+    <div class="pepagram-nav">
+      <div class="pepagram-nav__container">
+        <div class="pepagram-nav__brand">
+          <a href="index.html">
+            <img src="./images/example-project-logo@2x.png" alt="Example Style Guide">
+          </a>
+        </div>
+        <div class="pepagram-nav__menu">
+          
+            
+              <a class="pepagram-nav__item
+                        "
+                 href="animation.html">
+                animation
+              </a>
+            
+          
+            
+              <a class="pepagram-nav__item
+                        "
+                 href="color.html">
+                color
+              </a>
+            
+          
+            
+              <a class="pepagram-nav__item
+                         pepagram-nav__item--current"
+                 href="component.html">
+                component
+              </a>
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+    
+      
+        <div class="pepagram-header">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-header__heading">
+              component
+            </div>
+            <div class="pepagram-header__list">
+              
+                <div class="pepagram-header__item">
+                  <a href="#button">.button</a>
+                </div>
+              
+                <div class="pepagram-header__item">
+                  <a href="#search-form">.search-form</a>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      
+    
+    <div class="pepagram-content">
+      <div class="pepagram-utility-layout">
+<h1 id="button" class="styleguide">.button</h1>
+
+<p>ボタンにしたい要素に <code>.button</code> を指定すると、ボタンの見た目になります。</p>
+          </div><!-- end of .pepagram-utility-layout -->
+        </div><!-- end of .pepagram-content -->
+        <div class="pepagram-example">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-example__preview">
+              <button class="button">Default</button>
+
+            </div>
+            <div class="pepagram-example__code">
+              <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+</pre>
+            </div>
+          </div>
+        </div>
+        <div class="pepagram-content">
+          <div class="pepagram-utility-layout">
+
+<p><code>.button</code> 要素に、さらに用途別の class を追加することで色が変わります。</p>
+          </div><!-- end of .pepagram-utility-layout -->
+        </div><!-- end of .pepagram-content -->
+        <div class="pepagram-example">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-example__preview">
+              <button class="button button-primary">Primary</button>
+<button class="button button-success">Success</button>
+<button class="button button-warning">Warning</button>
+<button class="button button-danger">Danger</button>
+
+            </div>
+            <div class="pepagram-example__code">
+              <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+</pre>
+            </div>
+          </div>
+        </div>
+        <div class="pepagram-content">
+          <div class="pepagram-utility-layout">
+
+<p>横幅いっぱいに <code>.button</code> を表示したいときは、さらに <code>.button--block</code> を指定します。</p>
+          </div><!-- end of .pepagram-utility-layout -->
+        </div><!-- end of .pepagram-content -->
+        <div class="pepagram-example">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-example__preview">
+              <button class="button button--primary button--block">Primary (Block)</button>
+
+            </div>
+            <div class="pepagram-example__code">
+              <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button--primary button--block"</span><span class="nt">&gt;</span>Primary (Block)<span class="nt">&lt;/button&gt;</span>
+</pre>
+            </div>
+          </div>
+        </div>
+        <div class="pepagram-content">
+          <div class="pepagram-utility-layout">
+
+<h1 id="search-form" class="styleguide">.search-form</h1>
+
+<p>検索フォームを表示したいときは、以下のようにマークアップします。</p>
+          </div><!-- end of .pepagram-utility-layout -->
+        </div><!-- end of .pepagram-content -->
+        <div class="pepagram-example">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-example__preview">
+              <form class="search-form" action="#">
+  <div class="search-form__query">
+    <input type="search">
+  </div>
+  <div class="search-form__action">
+    <button class="button button--block">検索</button>
+  </div>
+</form>
+
+            </div>
+            <div class="pepagram-example__code">
+              <pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"search-form"</span> <span class="na">action=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search-form__query"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search-form__action"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button--block"</span><span class="nt">&gt;</span>検索<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre>
+            </div>
+          </div>
+        </div>
+        <div class="pepagram-content">
+          <div class="pepagram-utility-layout">
+      </div><!-- end of .pepagram-utility-layout -->
+    </div><!-- end of .pepagram-content -->
+    <div class="pepagram-footer">
+      <div class="pepagram-utility-layout">
+        <div class="pepagram-footer__copyright">
+          © 2016 GMO Pepabo, Inc.
+        </div>
+        <div class="pepagram-footer__pubdate" title="2016-04-04 20:34:05 +0900">
+          最終更新日: 2016年4月4日
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

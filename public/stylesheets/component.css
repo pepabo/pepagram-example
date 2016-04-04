@@ -1,0 +1,126 @@
+/*doc
+---
+title: .button
+name: button
+category: component
+---
+
+ボタンにしたい要素に `.button` を指定すると、ボタンの見た目になります。
+
+```example
+<button class="button">Default</button>
+```
+
+`.button` 要素に、さらに用途別の class を追加することで色が変わります。
+
+```example
+<button class="button button-primary">Primary</button>
+<button class="button button-success">Success</button>
+<button class="button button-warning">Warning</button>
+<button class="button button-danger">Danger</button>
+```
+
+横幅いっぱいに `.button` を表示したいときは、さらに `.button--block` を指定します。
+
+```example
+<button class="button button--primary button--block">Primary (Block)</button>
+```
+
+*/
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 0 24px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 48px;
+  background-color: #607d8b;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.66;
+}
+.button.button-primary {
+  background-color: #2169f3;
+}
+.button.button-success {
+  background-color: #4caf50;
+}
+.button.button-warning {
+  background-color: #ff9800;
+}
+.button.button-danger {
+  background-color: #f44336;
+}
+.button.button--block {
+  display: block;
+  width: 100%;
+}
+
+/*doc
+---
+title: .search-form
+name: search-form
+category: component
+---
+
+検索フォームを表示したいときは、以下のようにマークアップします。
+
+```example
+<form class="search-form" action="#">
+  <div class="search-form__query">
+    <input type="search">
+  </div>
+  <div class="search-form__action">
+    <button class="button button--block">検索</button>
+  </div>
+</form>
+```
+
+*/
+.search-form {
+  display: table;
+}
+.search-form__query {
+  display: table-cell;
+  width: 360px;
+  vertical-align: top;
+}
+input[type='search'] {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 2px solid #607d8b;
+  border-radius: 4px;
+  display: block;
+  outline: 0;
+}
+.search-form__action {
+  display: table-cell;
+  padding: 0 0 0 10px;
+  width: 120px;
+  vertical-align: top;
+}
+@media screen and (max-width: 767px) {
+  .search-form,
+  .search-form__query,
+  .search-form__action {
+    display: block;
+    width: 100%;
+  }
+  .search-form__action {
+    padding: 10px 0 0;
+  }
+}
