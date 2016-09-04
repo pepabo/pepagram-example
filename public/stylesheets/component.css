@@ -14,10 +14,10 @@ category: component
 `.button` 要素に、さらに用途別の class を追加することで色が変わります。
 
 ```example
-<button class="button button-primary">Primary</button>
-<button class="button button-success">Success</button>
-<button class="button button-warning">Warning</button>
-<button class="button button-danger">Danger</button>
+<button class="button button--primary">Primary</button>
+<button class="button button--success">Success</button>
+<button class="button button--warning">Warning</button>
+<button class="button button--danger">Danger</button>
 ```
 
 横幅いっぱいに `.button` を表示したいときは、さらに `.button--block` を指定します。
@@ -48,16 +48,16 @@ category: component
 .button:hover {
   opacity: 0.66;
 }
-.button.button-primary {
+.button.button--primary {
   background-color: #2169f3;
 }
-.button.button-success {
+.button.button--success {
   background-color: #4caf50;
 }
-.button.button-warning {
+.button.button--warning {
   background-color: #ff9800;
 }
-.button.button-danger {
+.button.button--danger {
   background-color: #f44336;
 }
 .button.button--block {
